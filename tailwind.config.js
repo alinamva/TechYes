@@ -2,7 +2,17 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    colors: {
+      base_btn: "#9949FF",
+      white: "#ffff",
+      black: "#000000",
+    },
+
+    extend: {
+      fontFamily: {
+        Inter: ["Inter"],
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
