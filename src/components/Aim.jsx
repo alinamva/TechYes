@@ -5,14 +5,17 @@ import { Aims } from "../constants";
 const Aim = () => {
   return (
     <>
-      {Aims.map((aim) => {
+      {Aims.map((aim, index) => {
         return (
-          <div className="bg-transparent w-80 gap-10 flex flex-col items-center">
+          <div
+            key={index}
+            className="bg-transparent w-80 gap-10 flex flex-col items-center"
+          >
             <div>
               <img src={aim1} alt="aim1" />
             </div>
-            <div className="box-gradient rounded-2xl px-16 py-8">
-              <p className="w-[215px]">{aim.content}</p>
+            <div className="box-gradient w-9/12 rounded-2xl px-8 py-8">
+              <p>{aim.content}</p>
             </div>
           </div>
         );

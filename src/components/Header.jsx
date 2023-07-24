@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className="navbar lg:px-32 lg:py-9 px-8 py-8 w-full flex items-center justify-between">
       <div className="navbar-start flex gap-4">
-        <div className="cursor-pointer">
+        <div className="cursor-pointer min-w-full">
           <img src={logo} alt="logo" />
         </div>
         <div className="dropdown">

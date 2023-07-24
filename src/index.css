@@ -8,10 +8,13 @@
     @apply rounded-3xl px-8 py-3 text-white min-w-[140px];
   }
   h1 {
-    @apply text-7xl font-black;
+    @apply lg:text-7xl text-4xl font-black;
   }
   h2 {
-    @apply text-3xl;
+    @apply lg:text-4xl text-xl;
+  }
+  h3 {
+    @apply lg:text-xl text-lg;
   }
 }
 @tailwind components;
@@ -22,8 +25,24 @@
   .custom-gradient {
     background-image: linear-gradient(to right, #2d0264, black, #11004e);
   }
+  .custom-gradient2 {
+    background-image: linear-gradient(188deg, #e100ff 0%, #7f00ff 100%);
+    box-shadow: 1.1504625082015991px -1.8359957933425903px 5.351851940155029px 0px
+        rgba(127, 0, 255, 0.05),
+      5.062035083770752px -8.078381538391113px 11.08148193359375px 0px rgba(127, 0, 255, 0.09),
+      12.424994468688965px -19.828754425048828px 22.100000381469727px 0px rgba(127, 0, 255, 0.11),
+      23.92961883544922px -38.18871307373047px 43.318519592285156px 0px rgba(127, 0, 255, 0.13),
+      40.26618576049805px -64.25984954833984px 79.64814758300781px 0px rgba(127, 0, 255, 0.17),
+      62.12497329711914px -99.1437759399414px 136px 0px rgba(127, 0, 255, 0.22);
+    transform: rotate(176deg);
+  }
   .accent {
     background-image: linear-gradient(184deg, #e100ff 27.3%, #7f00ff 84.77%);
+    background-clip: text;
+    color: transparent;
+  }
+  .accen {
+    background-image: linear-gradient(210deg, cyan 15%, red 85%);
     background-clip: text;
     color: transparent;
   }
@@ -34,5 +53,8 @@
       rgba(27, 15, 78, 0) 100%
     );
     box-shadow: 0px -21px 30px 0px rgba(127, 67, 255, 0.6);
+  }
+  .bg-image {
+    background-image: url(./assets/bg2.png);
   }
 }

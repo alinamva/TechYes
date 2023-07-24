@@ -3,7 +3,7 @@ import Aim from "./Aim";
 
 const Greeting = () => {
   return (
-    <div className="flex  flex-col gap-9 my-28 px-28 justify-center items-center text-center">
+    <div className="flex  flex-col gap-9 my-16 px-16 lg:px-28 justify-center items-center text-center">
       <h1>
         Tech Yes! Solutions.
         <br /> Your guide in the <span className="accent">digital age.</span>
