@@ -21,6 +21,8 @@ import person2 from "../assets/person2.png";
 import person3 from "../assets/person3.png";
 import testiIcon from "../assets/testiIcon.png";
 
+import map from "../assets/map.png";
+
 export const navLinks = [
   {
     id: "home",
@@ -113,5 +115,28 @@ export const TestimonialsData = [
     heading: "Perfect. Just perfect!I can’t say anything.",
     name: "Marina J.",
     job: "HR Officer",
+  },
+];
+export const FooterData = [
+  {
+    heading: "COMPANY INFO",
+    first:
+      "Reach out to us anytime and lets create a better future for all technology users together, forever. We are open to all types of collab offers and tons more.",
+    second: "Office Hours Monday-Friday 9 AM-5 PM PST",
+    third: "Support Hours 24/7 365",
+  },
+  {
+    heading: "CONTACT INFO",
+    first: "info@techyessolutions.com",
+    second: "858-227-4878",
+  },
+  {
+    heading: "OUR SERVICES",
+    first: "Information Systems Strategy",
+    second: "Custom Software",
+    third: "Integration Services",
+    fifth: "Business Automation",
+    six: "Web, Ecommerce & Mobiel Apps",
+    sevens: "Creative",
   },
 ];

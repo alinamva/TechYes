@@ -10,6 +10,8 @@ export default {
       darkpurple: "#251C30",
       green: "#31D7B9",
       darkgrey: "#161E25",
+      grey: "#292929",
+      lightgrey: "#C6C6C6",
     },
 
     extend: {

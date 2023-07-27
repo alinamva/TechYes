@@ -1,5 +1,6 @@
 import About from "./components/about";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Greeting from "./components/Greeting";
 import Header from "./components/Header";
 import Progress from "./components/Progress";
@@ -15,6 +16,7 @@ function App() {
       <Services />
       <Progress />
       <Contact />
+      <Footer />
     </div>
   );
 }

@@ -16,6 +16,10 @@
   h3 {
     @apply lg:text-xl text-lg;
   }
+
+  li {
+    @apply text-lightgrey;
+  }
 }
 @tailwind components;
 
