@@ -6,8 +6,10 @@ export default {
       base_btn: "#9949FF",
       white: "#ffff",
       black: "#000000",
+      purple: "#8000FF",
       darkpurple: "#251C30",
-      secondary: "#12c6ff",
+      green: "#31D7B9",
+      darkgrey: "#161E25",
     },
 
     extend: {

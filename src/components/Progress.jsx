@@ -1,25 +1,23 @@
 import React from "react";
-import bg2 from "../assets/bg2.png";
 import { ProgressData } from "../constants";
+import ProgressItem from "./ProgressItem";
+import Testimonials from "./Testimonials";
 const Progress = () => {
   return (
-    <div className="bg-image w-full h-[1804px] pt-44 px-24">
-      {" "}
+    <div className="bg-image w-full h-fit-content bg-no-repeat pt-44 px-24">
       <div className="flex items-center gap-3">
         <div className="w-full h-[1px] border-b  border-white"></div>{" "}
-        <span className="bg-accent2">03</span>
-        <div className="w-[1px] h-[15px] border-r-2 border-secondary"></div>
+        <span className="green-accent">03</span>
+        <div className="w-[1px] h-[20px] border-r-2 border-green"></div>
         <h3 className="min-w-fit">OUR PROGRESS</h3>
       </div>
-      {ProgressData.map((progress) => {
-        return (
-          <div>
-            <h3 className="accen">{progress.heading}</h3>
-            <p>{progress.content}</p>
-            <img src={progress?.icon} />
-          </div>
-        );
-      })}
+
+      <div className="grid grid-cols-2">
+        {ProgressData.map((progress, index) => (
+          <ProgressItem progress={progress} key={index} />
+        ))}
+      </div>
+      <Testimonials />
     </div>
   );
 };

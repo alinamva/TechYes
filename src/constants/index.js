@@ -1,13 +1,25 @@
 // import { aim1, aim2, aim3 } from "../assets";
 // import { progress1, progress2, progress3, progress4 } from "../assets";
-import progress from "../assets/progress.png";
+import aim1 from "../assets/aim1.png";
+import aim2 from "../assets/aim2.png";
+import aim3 from "../assets/aim3.png";
 
+import progress from "../assets/progress.png";
 import progress1 from "../assets/progress1.png";
 import progress2 from "../assets/progress2.png";
-
 import progress3 from "../assets/progress3.png";
-
 import progress4 from "../assets/progress4.png";
+import service1 from "../assets/service1.svg";
+import service2 from "../assets/service2.svg";
+import service3 from "../assets/service3.svg";
+import service4 from "../assets/service4.svg";
+import service5 from "../assets/service5.svg";
+import service6 from "../assets/service6.svg";
+
+import person1 from "../assets/person1.png";
+import person2 from "../assets/person2.png";
+import person3 from "../assets/person3.png";
+import testiIcon from "../assets/testiIcon.png";
 
 export const navLinks = [
   {
@@ -32,23 +44,23 @@ export const navLinks = [
   },
 ];
 
-export const Aims = [
-  { content: "Bring together people, process, and technology" },
-  { content: "Custom solutions designed to meet your needs" },
-  { content: "Software built with the user’s experience in mind" },
+export const AimsData = [
+  { content: "Bring together people, process, and technology", icon: aim1 },
+  { content: "Custom solutions designed to meet your needs", icon: aim2 },
+  { content: "Software built with the user’s experience in mind", icon: aim3 },
 ];
 export const Abouts = [
   { content: "We always focus on technical excellence" },
   { content: "Wherever you’re going, we bring ideas and excitement" },
   { content: "We’re consultants, guides, and partners for brands" },
 ];
-export const Services = [
-  { service: "Information Systems Strategy" },
-  { service: "Custom Software" },
-  { service: "Integration Services" },
-  { service: "Web, Ecommerce & Mobile Apps" },
-  { service: "Business Automation" },
-  { service: "Creativity" },
+export const ServicesData = [
+  { service: "Information Systems Strategy", icon: service1 },
+  { service: "Custom Software", icon: service2 },
+  { service: "Integration Services", icon: service3 },
+  { service: "Web, Ecommerce & Mobile Apps", icon: service4 },
+  { service: "Business Automation", icon: service5 },
+  { service: "Creativity", icon: service6 },
 ];
 export const ProgressData = [
   {
@@ -77,5 +89,29 @@ export const ProgressData = [
     heading: "Deliver",
     content: "...resulting in a tailored solution that provides you value.",
     icon: progress4,
+  },
+];
+
+export const TestimonialsData = [
+  {
+    img: person1,
+    icon: testiIcon,
+    heading: "I couldn't be any happier. Highly recommended!",
+    name: "Marcus W.",
+    job: "Developer",
+  },
+  {
+    img: person2,
+    icon: testiIcon,
+    heading: "Great service and custom service! Perfect!",
+    name: "Jessy K.",
+    job: "Front-End Developer",
+  },
+  {
+    img: person3,
+    icon: testiIcon,
+    heading: "Perfect. Just perfect!I can’t say anything.",
+    name: "Marina J.",
+    job: "HR Officer",
   },
 ];

@@ -1,6 +1,5 @@
 import React from "react";
 import cubes from "../assets/cubes.png";
-import image1 from "../assets/image1.png";
 import AboutImage from "./AboutImage";
 import AboutOffers from "./AboutOffers";
 

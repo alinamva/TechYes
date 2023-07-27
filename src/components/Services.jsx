@@ -1,8 +1,9 @@
 import React from "react";
 import back from "../assets/back.png";
+import { ServicesData } from "../constants";
 import Service from "./Service";
 
-const Services = () => {
+const Services = ({ service, index }) => {
   return (
     <div className="bg-darkpurple px-10  pb-12 flex gap-6 flex-col">
       <div className="flex flex-col mt-24 gap-24 items-center">
@@ -12,7 +13,7 @@ const Services = () => {
             <div className="w-[1px] h-[15px] border-r-2  border-base_btn"></div>
             <h3 className="min-w-fit">WHO WE ARE</h3>
           </div>{" "}
-          <div className="flex flex-col gap-8 text-center w-6/12">
+          <div className="flex flex-col gap-8 text-center max-w-6/12">
             <h2 className="font-bold">
               Our <span className="accent">comprehensive services</span> will
               cover all your needs.
@@ -25,8 +26,10 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="ml-32 gap-16 justify-center items-center grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1">
-          <Service />
+        <div className="lg:ml-32  gap-16 justify-center items-center grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1">
+          {ServicesData.map((service, index) => (
+            <Service service={service} key={index} />
+          ))}
         </div>
       </div>
       <div className="absolute">
