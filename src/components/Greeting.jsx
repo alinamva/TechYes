@@ -1,5 +1,6 @@
 import React from "react";
 import Aim from "./Aim";
+import { Link } from "react-scroll";
 
 const Greeting = () => {
   return (
@@ -8,7 +9,12 @@ const Greeting = () => {
         Tech Yes! Solutions.
         <br /> Your guide in the <span className="accent">digital age.</span>
       </h1>
-      <button className="bg-base_btn">Let's Talk</button>
+      <button className="bg-base_btn hidden lg:block">
+        {" "}
+        <Link to="contact" smooth={true} duration={500}>
+          <a>Let's Talk</a>
+        </Link>{" "}
+      </button>
       <div className="flex flex-wrap justify-center  gap-16">
         <Aim />
       </div>

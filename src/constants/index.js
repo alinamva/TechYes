@@ -9,6 +9,7 @@ import progress1 from "../assets/progress1.png";
 import progress2 from "../assets/progress2.png";
 import progress3 from "../assets/progress3.png";
 import progress4 from "../assets/progress4.png";
+
 import service1 from "../assets/service1.svg";
 import service2 from "../assets/service2.svg";
 import service3 from "../assets/service3.svg";
@@ -20,8 +21,8 @@ import person1 from "../assets/person1.png";
 import person2 from "../assets/person2.png";
 import person3 from "../assets/person3.png";
 import testiIcon from "../assets/testiIcon.png";
-
-import map from "../assets/map.png";
+// import { BeakerIcon } from "@heroicons/react/24/solid";
+import { TrashIcon } from "@heroicons/react/24/solid";
 
 export const navLinks = [
   {
@@ -37,9 +38,10 @@ export const navLinks = [
     title: "Services",
   },
   {
-    id: "blog",
-    title: "Blog",
+    id: "progress",
+    title: "Progress",
   },
+
   {
     id: "contact",
     title: "Contact",
@@ -57,7 +59,11 @@ export const Abouts = [
   { content: "We’re consultants, guides, and partners for brands" },
 ];
 export const ServicesData = [
-  { service: "Information Systems Strategy", icon: service1 },
+  {
+    service: "Information Systems Strategy",
+    icon: service1,
+    // icon: <TrashIcon size={20} />,
+  },
   { service: "Custom Software", icon: service2 },
   { service: "Integration Services", icon: service3 },
   { service: "Web, Ecommerce & Mobile Apps", icon: service4 },

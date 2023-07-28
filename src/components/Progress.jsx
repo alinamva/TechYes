@@ -1,5 +1,4 @@
 import React from "react";
-import { ProgressData } from "../constants";
 import ProgressItem from "./ProgressItem";
 import Testimonials from "./Testimonials";
 const Progress = () => {
@@ -12,10 +11,8 @@ const Progress = () => {
         <h3 className="min-w-fit">OUR PROGRESS</h3>
       </div>
 
-      <div className="grid grid-cols-2">
-        {ProgressData.map((progress, index) => (
-          <ProgressItem progress={progress} key={index} />
-        ))}
+      <div className="grid grid-rows-4 grid-cols-2 grid-flow-col">
+        <ProgressItem />
       </div>
       <Testimonials />
     </div>

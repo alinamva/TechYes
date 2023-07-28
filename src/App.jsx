@@ -5,6 +5,7 @@ import Greeting from "./components/Greeting";
 import Header from "./components/Header";
 import Progress from "./components/Progress";
 import Services from "./components/Services";
+import { Element } from "react-scroll";
 function App() {
   return (
     <div className="bg-black">
@@ -12,10 +13,18 @@ function App() {
         <Header />
         <Greeting />
       </div>
-      <About />
-      <Services />
-      <Progress />
-      <Contact />
+      <Element name="aboutus">
+        <About />
+      </Element>
+      <Element name="services">
+        <Services />
+      </Element>
+      <Element name="progress">
+        <Progress />
+      </Element>
+      <Element name="contact">
+        <Contact />
+      </Element>
       <Footer />
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "..//assets/logo.png";
 import { navLinks } from "../constants";
+import { Link } from "react-scroll";
 
 const Header = () => {
   return (
@@ -31,28 +32,36 @@ const Header = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base_btn rounded-box w-52"
           >
             {navLinks.map((nav, index) => (
-              <li key={index}>
+              <li key={index} onClick={() => scrollToSection(nav.id)}>
                 <a>{nav.title}</a>
               </li>
             ))}
-            <button className="bg-white">
-              <a>Let's Talk</a>
+            <button className="bg-base_btn hidden lg:block">
+              {" "}
+              <Link to="contact" smooth={true} duration={500}>
+                <a>Let's Talk</a>
+              </Link>{" "}
             </button>
           </ul>
         </div>
       </div>
       <div className="navbar hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal  px-1">
           {navLinks.map((nav, index) => (
-            <li key={index}>
-              <a>{nav.title}</a>
+            <li key={index} className="hover:bg-lightgrey rounded duration-300">
+              <Link to={nav.id} smooth={true} duration={500}>
+                {nav.title}
+              </Link>
             </li>
           ))}
         </ul>
       </div>
       <div className="flex">
         <button className="bg-base_btn hidden lg:block">
-          <a>Let's Talk</a>
+          {" "}
+          <Link to="contact" smooth={true} duration={500}>
+            <a>Let's Talk</a>
+          </Link>{" "}
         </button>
       </div>
     </div>
