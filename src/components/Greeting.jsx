@@ -18,29 +18,31 @@ const Greeting = () => {
       >
         {" "}
         <Link to="contact" smooth={true} duration={500}>
-          <a>Let's Talk</a>
+          Let's Talk
         </Link>{" "}
       </motion.button>
       <div className="flex flex-wrap justify-center  gap-16">
         <Aim />
       </div>
-      <div className="flex flex-col items-center pt-10 cursor-pointer gap-5">
-        <p>Scroll to learn more</p>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
-          />
-        </svg>
-      </div>
+      <Link to="aboutus" smooth={true} duration={500}>
+        <div className="flex flex-col items-center pt-10 cursor-pointer gap-5">
+          <p>Scroll to learn more</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </div>
+      </Link>
     </div>
   );
 };

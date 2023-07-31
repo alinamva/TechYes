@@ -1,8 +1,11 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 const TestimonialItem = ({ testimonial, index }) => {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       key={index}
       className=" bg-darkgrey px-6 pb-4 h-[300px] max-w-xs  sm:gap-9 gap-6   rounded-xl items-center justify-end flex flex-col text-center"
     >
@@ -16,7 +19,7 @@ const TestimonialItem = ({ testimonial, index }) => {
           {testimonial.job}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

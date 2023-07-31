@@ -32,9 +32,14 @@ export const buttonVariants = {
 // };
 const Header = () => {
   return (
-    <div className="navbar lg:px-32 lg:py-9 px-8 py-8 w-full flex items-center justify-between">
+    <motion.div
+      className="navbar lg:px-32 lg:py-9 px-8 py-8 w-full flex items-center justify-between"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.5, type: "spring" }}
+    >
       <div className="navbar-start flex gap-4">
-        <div className="cursor-pointer min-w-full ">
+        <div className="cursor-pointer min-w-full">
           <img src={logo} alt="logo" />
         </div>
         <div className="dropdown absolute left-3/4">
@@ -66,18 +71,13 @@ const Header = () => {
             <button className="bg-base_btn hidden lg:block">
               {" "}
               <Link to="contact" smooth={true} duration={500}>
-                <a>Let's Talk</a>
+                Let's Talk
               </Link>{" "}
             </button>
           </ul>
         </div>
       </div>
-      <motion.div
-        className="navbar hidden lg:flex"
-        initial={{ y: -250 }}
-        animate={{ y: 0 }}
-        transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
-      >
+      <div className="navbar hidden lg:flex">
         <ul className="menu menu-horizontal  px-1">
           {navLinks.map((nav, index) => (
             <li key={index} className="hover:bg-lightgrey rounded duration-300">
@@ -87,7 +87,7 @@ const Header = () => {
             </li>
           ))}
         </ul>
-      </motion.div>
+      </div>
       <div className="flex">
         <motion.button
           whileHover="hover"
@@ -96,11 +96,11 @@ const Header = () => {
         >
           {" "}
           <Link to="contact" smooth={true} duration={500}>
-            <a>Let's Talk</a>
+            Let's Talk
           </Link>{" "}
         </motion.button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
