@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Progress from "./components/Progress";
 import Services from "./components/Services";
 import { Element } from "react-scroll";
+import Parallax from "./components/Parallax";
 function App() {
   return (
     <div className="bg-black">
@@ -19,6 +20,8 @@ function App() {
       <Element name="services">
         <Services />
       </Element>
+      <Parallax />
+
       <Element name="progress">
         <Progress />
       </Element>

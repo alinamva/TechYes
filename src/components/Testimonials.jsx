@@ -5,19 +5,19 @@ import TestimonialItem from "./TestimonialItem";
 
 const Testimonials = () => {
   return (
-    <div className="flex flex-col gap-12">
+    <div className="flex flex-col lg:gap-12">
       <div className="flex items-center gap-3">
         <span className="text-base_btn">04</span>
         <div className="w-[1px] h-[15px] border-r-2  border-base_btn"></div>
         <h3 className="min-w-fit">TESTIMONIALS</h3>
         <div className="w-full h-[1px] border-b  border-white"></div>
       </div>
-      <div className="flex flex-col gap-40">
-        <div className="w-full flex">
-          <div>
+      <div className="flex  flex-col lg:gap-40 gap-28">
+        <div className="w-full flex lg:flex-row flex-col justify-center">
+          <div className="lg:m-0 m-auto ">
             <img src={pinkcube} />
           </div>
-          <div className="w-2/4 flex flex-col gap-5">
+          <div className="lg:w-2/4 w-full text-justify flex flex-col gap-5 lg:m-0 m-auto ">
             <h2>
               Testimonials.
               <span className="accent">
@@ -33,7 +33,7 @@ const Testimonials = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-centre gap-5 m-auto ">
+        <div className="flex justify-center lg:flex-row flex-col lg:gap-5 gap-20 m-auto ">
           {TestimonialsData.map((testimonial, index) => (
             <TestimonialItem testimonial={testimonial} key={index} />
           ))}

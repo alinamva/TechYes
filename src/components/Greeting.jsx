@@ -1,6 +1,8 @@
 import React from "react";
 import Aim from "./Aim";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
+import { buttonVariants } from "./Header";
 
 const Greeting = () => {
   return (
@@ -9,12 +11,16 @@ const Greeting = () => {
         Tech Yes! Solutions.
         <br /> Your guide in the <span className="accent">digital age.</span>
       </h1>
-      <button className="bg-base_btn hidden lg:block">
+      <motion.button
+        whileHover="hover"
+        variants={buttonVariants}
+        className="bg-base_btn hidden lg:block"
+      >
         {" "}
         <Link to="contact" smooth={true} duration={500}>
           <a>Let's Talk</a>
         </Link>{" "}
-      </button>
+      </motion.button>
       <div className="flex flex-wrap justify-center  gap-16">
         <Aim />
       </div>

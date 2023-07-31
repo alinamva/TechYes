@@ -12,10 +12,12 @@
   "dependencies": {
     "@heroicons/react": "^2.0.18",
     "daisyui": "^3.3.1",
+    "framer-motion": "^10.15.0",
     "init": "^0.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scroll": "^1.8.9"
+    "react-scroll": "^1.8.9",
+    "vite-plugin-svgr": "^3.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

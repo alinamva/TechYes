@@ -8,7 +8,7 @@ const Aim = () => {
         return (
           <div
             key={index}
-            className="bg-transparent w-80 gap-10 flex flex-col items-center"
+            className="bg-transparent w-72 gap-10 flex flex-col items-center"
           >
             <div>
               <img src={aim.icon} alt="aim" />

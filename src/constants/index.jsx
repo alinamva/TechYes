@@ -10,12 +10,18 @@ import progress2 from "../assets/progress2.png";
 import progress3 from "../assets/progress3.png";
 import progress4 from "../assets/progress4.png";
 
-import service1 from "../assets/service1.svg";
-import service2 from "../assets/service2.svg";
-import service3 from "../assets/service3.svg";
-import service4 from "../assets/service4.svg";
-import service5 from "../assets/service5.svg";
-import service6 from "../assets/service6.svg";
+// import service1 from "../assets/service1.svg";
+// import service2 from "../assets/service2.svg";
+// import service3 from "../assets/service3.svg";
+// import service4 from "../assets/service4.svg";
+// import service5 from "../assets/service5.svg";
+// import service6 from "../assets/service6.svg";
+import { ReactComponent as Service1 } from "../assets/service1.svg";
+import { ReactComponent as Service2 } from "../assets/service2.svg";
+import { ReactComponent as Service3 } from "../assets/service3.svg";
+import { ReactComponent as Service4 } from "../assets/service4.svg";
+import { ReactComponent as Service5 } from "../assets/service5.svg";
+import { ReactComponent as Service6 } from "../assets/service6.svg";
 
 import person1 from "../assets/person1.png";
 import person2 from "../assets/person2.png";
@@ -61,14 +67,25 @@ export const Abouts = [
 export const ServicesData = [
   {
     service: "Information Systems Strategy",
-    icon: service1,
-    // icon: <TrashIcon size={20} />,
+    icon: <Service1 className="w-10 text-lightgrey" />,
   },
-  { service: "Custom Software", icon: service2 },
-  { service: "Integration Services", icon: service3 },
-  { service: "Web, Ecommerce & Mobile Apps", icon: service4 },
-  { service: "Business Automation", icon: service5 },
-  { service: "Creativity", icon: service6 },
+  {
+    service: "Custom Software",
+    icon: <Service2 className="w-10  text-lightgrey" />,
+  },
+  {
+    service: "Integration Services",
+    icon: <Service3 className="w-10 text-lightgrey" />,
+  },
+  {
+    service: "Web, Ecommerce & Mobile Apps",
+    icon: <Service4 className="w-10 text-lightgrey" />,
+  },
+  {
+    service: "Business Automation",
+    icon: <Service5 className="w-10 text-lightgrey" />,
+  },
+  { service: "Creativity", icon: <Service6 className="w-10 text-lightgrey" /> },
 ];
 export const ProgressData = [
   {

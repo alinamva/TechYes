@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { buttonVariants } from "./Header";
 
 const Form = () => {
   return (
@@ -86,9 +88,14 @@ const Form = () => {
           placeholder="Write something here..."
         />
       </div>
-      <button type="submit" className="bg-base_btn w-fit">
+      <motion.button
+        variants={buttonVariants}
+        whileHover="hover"
+        type="submit"
+        className="bg-base_btn w-fit"
+      >
         Submit Now
-      </button>
+      </motion.button>
     </form>
   );
 };

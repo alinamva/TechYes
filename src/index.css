@@ -73,4 +73,7 @@
   .bg-image2 {
     background-image: url(./assets/image2.png);
   }
+  .bg-parallax {
+    background-image: url(./assets/parallax.jpg);
+  }
 }

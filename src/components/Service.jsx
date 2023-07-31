@@ -1,11 +1,9 @@
 import React from "react";
-import service1 from "../assets/service1.svg";
 
 const Service = ({ service, index }) => {
-  console.log(service);
   return (
     <div key={index} className="gap-1 flex flex-col">
-      <img src={service1} />
+      <p>{service.icon}</p>
 
       <h3 className="text-base_btn">{service.service}</h3>
       <p className="flex gap-3">
